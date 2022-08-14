@@ -7,8 +7,7 @@ class RecipeApi {
     var uri = Uri.https('yummly2.p.rapidapi.com', '/feeds/list',
         {"limit": "24", "start": "0", "tag": "list.recipe.popular"});
 
-    final response = await http.get(uri, headers: {
-      "X-RapidAPI-Key": "ea67eb5f31msh17daa22ff1d4f58p13d629jsne8fb86c49288",
+    final response = await http.get(uri, headers: 
       "X-RapidAPI-Host": "yummly2.p.rapidapi.com",
       "useQueryString": "true"
     });
